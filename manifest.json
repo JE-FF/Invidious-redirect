@@ -2,10 +2,10 @@
 
   "manifest_version": 2,
   "version": "1.1.0",
-  "name": "Teddit Redirect",
-  "description": "Redirect from Reddit to teddit automagically",
+  "name": "Invidious Redirect",
+  "description": "Redirect all links from Youtube to Yewtu.be",
   
-  "homepage_url": "https://github.com/simon1573/teddit-redirect",
+  "homepage_url": "https://github.com/JE-FF/Invidious-redirect/",
 
 
   "icons": {
@@ -22,7 +22,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.reddit.com/*"],
+      "matches": ["*://*.youtube.com/*"],
       "js": ["teddit-redirect.js"],
       "run_at": "document_start"
     }
